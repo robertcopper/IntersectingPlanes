@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SceneKitIntersectingPlanes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" allowsCameraControl="YES" autoenablesDefaultLighting="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lvD-4I-pfW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </sceneKitView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOv-hB-E6h">
+                                <rect key="frame" x="350" y="830" width="64" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="WQn-el-sdC"/>
+                                    <constraint firstAttribute="height" constant="32" id="q6m-Ow-duc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                <state key="normal" title="Fire!"/>
+                                <connections>
+                                    <action selector="fire2WithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hb9-gn-lnz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngx-Zm-APb">
+                                <rect key="frame" x="0.0" y="830" width="64" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="7wt-ND-7a7"/>
+                                    <constraint firstAttribute="width" constant="64" id="S2l-FH-3Hv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="15"/>
+                                <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                <state key="normal" title="Fire!">
+                                    <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fire1WithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uxq-aw-Ovx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ngx-Zm-APb" secondAttribute="bottom" id="1Il-pk-VCa"/>
+                            <constraint firstItem="lvD-4I-pfW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="47M-qm-CrH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lvD-4I-pfW" secondAttribute="bottom" id="APO-TJ-6KQ"/>
+                            <constraint firstItem="lvD-4I-pfW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SkN-2b-qC4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lvD-4I-pfW" secondAttribute="trailing" id="gDq-7k-xJj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gOv-hB-E6h" secondAttribute="bottom" id="oYb-pf-1ed"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gOv-hB-E6h" secondAttribute="trailing" id="qFX-Cv-zWg"/>
+                            <constraint firstItem="Ngx-Zm-APb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rve-Fl-rU3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scnView" destination="lvD-4I-pfW" id="fgc-FM-EHN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>
