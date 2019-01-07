@@ -21,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		471E224921E3D800004AA3CC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		478FD73321472F97002F4E4C /* Quaternion+conjugate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Quaternion+conjugate.swift"; sourceTree = "<group>"; };
 		47AE236D211B4CEB007AB30A /* ARKitIntersectingPlanes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitIntersectingPlanes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47AE2370211B4CEB007AB30A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 				47C3A800213464C9005C1738 /* Nick Lockwood */,
 				47AE2370211B4CEB007AB30A /* AppDelegate.swift */,
 				47AE2372211B4CEB007AB30A /* ViewController.swift */,
+				471E224921E3D800004AA3CC /* .gitignore */,
 				47AE2374211B4CEB007AB30A /* Main.storyboard */,
 				47AE2377211B4CED007AB30A /* Assets.xcassets */,
 				47AE2379211B4CED007AB30A /* LaunchScreen.storyboard */,
